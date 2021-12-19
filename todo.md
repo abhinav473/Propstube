@@ -29,16 +29,13 @@ Do the following changes and then send a pull request.
 
 
 
-## Diagrammatic Represent
+## Working Representation
 
-```mermaid
-sequenceDiagram
-Home ->> Login: On clicking Login Button
-Home ->> About: On clicking About Product Button
-Login-->>Dashboard: Auto Redirect After login
-Dashboard-->>Login: On clicking Logout Button
-Dashboard--x Chatbox: On creating a room!
-Chatbox-x Dashboard: On deleting a room!
-Note right of Chatbox: Feel free to contact us for more information.
 ```
+Home -> Login: On clicking Login Button
+Home -> About: On clicking About Product Button
+Login -> Dashboard: Auto Redirect After login
+Dashboard -> Login: On clicking Logout Button
+Dashboard -> Chatbox: On creating a room!
+Chatbox -> Dashboard: On deleting a room!
 ```
